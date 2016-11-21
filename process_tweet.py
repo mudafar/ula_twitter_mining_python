@@ -1,6 +1,7 @@
 import json
 import pandas as pd
 import re
+import numpy as np
 
 
 def word_in_text(word, text):
@@ -34,5 +35,4 @@ tweets['python'] = tweets['text'].apply(lambda tweet: word_in_text('python', twe
 
 print(tweets['python'].value_counts()[True])
 
-tweets.plot()
 
