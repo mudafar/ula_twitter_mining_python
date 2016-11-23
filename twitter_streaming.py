@@ -1,6 +1,6 @@
 #Variables that contains the user credentials to access Twitter API 
 consumer_key    = "CQNd6xTT1qDnJTcq3bMU6g9Z6"
-consumer_secret = "4uTEkgkNmdoMuDJGpUlBqfNJ9q6icoT9y9exMIsAaBqJhniZqxsT4"
+consumer_secret = "4uTEkgkNmdoJGpUlBqfNJ9q6icoT9y9exMIsAaBqJhniZqxsT4"
 access_token    = "16898909-ELT7jgUkJkHi3Tw8BbkHOJzBwa8hxTiHg8xcVHQBY"
 access_secret   = "FAFqFvRQ6XfVkCc4LdJa0SBIXlVRPv1Up3HWLFU4dt3P5"
 
@@ -41,5 +41,5 @@ if __name__ == '__main__':
     api = tweepy.API(auth)
 
     twitter_stream = Stream(auth, MyListener())
-    twitter_stream.filter(track=['python','javascript','ruby'])
+    twitter_stream.filter(track=['addpi_redula','redula'])
 
